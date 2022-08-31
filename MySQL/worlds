@@ -1,0 +1,58 @@
+
+CREATE TABLE city_me
+(
+  ID          INT          NOT NULL COMMENT '아이디',
+  Name        VARCHAR(200) NULL     COMMENT '도시 이름',
+  District    VARCHAR(200) NULL     COMMENT '시가지',
+  Population  INT          NULL     COMMENT '도시 인구 수',
+  CountryCode VARCHAR(200) NOT NULL COMMENT '나라코드',
+  Code        VARCHAR(200) NOT NULL COMMENT '나라 코드',
+  Code2       VARCHAR(200) NOT NULL COMMENT '2번째 나라 코드',
+  PRIMARY KEY (ID)
+) COMMENT '도시';
+
+CREATE TABLE country_me
+(
+  Code           VARCHAR(200) NOT NULL COMMENT '나라 코드',
+  Continent      ENUM         NULL     COMMENT '그 나라의 대륙',
+  Region         VARCHAR(200) NULL     COMMENT '그 나라 지역 이름',
+  SurfaceArea    DECIMAL      NOT NULL COMMENT '나라 면적',
+  IndepYear      SMALLINT     NULL     COMMENT '그 나라가 독립한 해',
+  Population     INT          NULL     COMMENT '나라 인구 수',
+  LifeExpectancy DECIMAL      NULL     COMMENT '평균 수명',
+  GNP            DECIMAL      NULL     COMMENT '국민 총생산',
+  GNPOld         DECIMAL      NULL     COMMENT '국민 총생산 - 오래된값',
+  LocalName      VARCHAR(200) NULL     COMMENT '나라의 지역이름',
+  GovernmentForm CHAR         NULL     COMMENT '정부 형태',
+  HeadOfState    VARCHAR(200) NOT NULL COMMENT '국가 원수 풀네임',
+  Capital        INT          NOT NULL COMMENT '나라 수도',
+  Code2          VARCHAR(200) NOT NULL COMMENT '2번째 나라 코드',
+  Name           VARCHAR(200) NULL     COMMENT '나라 이름',
+  PRIMARY KEY (Code, Code2)
+) COMMENT '나라';
+
+CREATE TABLE countrylanguage_me
+(
+  CountryCode VARCHAR(200) NOT NULL COMMENT '나라코드',
+  Language    VARCHAR(200) NOT NULL COMMENT '나라 언어',
+  IsOfficial  VARCHAR(200) NULL     COMMENT '공식 언어 여부',
+  Percentage  DECIMAL      NULL     COMMENT '언어 사용 비율',
+  Code        VARCHAR(200) NOT NULL COMMENT '나라 코드',
+  Code2       VARCHAR(200) NOT NULL COMMENT '2번째 나라 코드',
+  PRIMARY KEY (CountryCode)
+) COMMENT '나라 언어';
+
+ALTER TABLE city_me
+  ADD CONSTRAINT FK_countrylanguage_me_TO_city_me
+    FOREIGN KEY (CountryCode)
+    REFERENCES countrylanguage_me (CountryCode);
+
+ALTER TABLE city_me
+  ADD CONSTRAINT FK_country_me_TO_city_me
+    FOREIGN KEY (Code, Code2)
+    REFERENCES country_me (Code, Code2);
+
+ALTER TABLE countrylanguage_me
+  ADD CONSTRAINT FK_country_me_TO_countrylanguage_me
+    FOREIGN KEY (Code, Code2)
+    REFERENCES country_me (Code, Code2);
