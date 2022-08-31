@@ -1,0 +1,793 @@
+{
+  "canvas": {
+    "version": "2.2.11",
+    "width": 2000,
+    "height": 2000,
+    "scrollTop": 0,
+    "scrollLeft": 0,
+    "zoomLevel": 0.8,
+    "show": {
+      "tableComment": true,
+      "columnComment": true,
+      "columnDataType": true,
+      "columnDefault": true,
+      "columnAutoIncrement": false,
+      "columnPrimaryKey": true,
+      "columnUnique": false,
+      "columnNotNull": true,
+      "relationship": true
+    },
+    "database": "MySQL",
+    "databaseName": "",
+    "canvasType": "ERD",
+    "language": "GraphQL",
+    "tableCase": "pascalCase",
+    "columnCase": "camelCase",
+    "highlightTheme": "VS2015",
+    "bracketType": "none",
+    "setting": {
+      "relationshipDataTypeSync": true,
+      "relationshipOptimization": false,
+      "columnOrder": [
+        "columnName",
+        "columnDataType",
+        "columnNotNull",
+        "columnUnique",
+        "columnAutoIncrement",
+        "columnDefault",
+        "columnComment"
+      ]
+    },
+    "pluginSerializationMap": {}
+  },
+  "table": {
+    "tables": [
+      {
+        "name": "답항 공통 코드",
+        "comment": "",
+        "columns": [
+          {
+            "name": "답항 공통 코드",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 89.140625,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "9dea9d1b-6172-4c76-bc0c-5770a6633759"
+          },
+          {
+            "name": "답항",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "3550092f-0f59-45cc-b351-394e7f8a2c66"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 1081.8667,
+          "top": 415.1101,
+          "zIndex": 270,
+          "widthName": 89.140625,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "59234e48-de27-4ce7-a899-bbac4760df3f"
+      },
+      {
+        "name": "답항",
+        "comment": "",
+        "columns": [
+          {
+            "name": "순번",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "d803dc83-35ff-449e-b85f-a3f851345327"
+          },
+          {
+            "name": "이름",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "fd504ed7-97fc-4ef8-af40-c41f7b561887"
+          },
+          {
+            "name": "답항 공통 코드",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 89.140625,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "dd761057-1448-422c-ad27-376b54b955ec"
+          },
+          {
+            "name": "답항",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "0a8c9ee2-8457-4fbb-8fe5-8510b84bc947"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 1084.4432,
+          "top": 102.2214,
+          "zIndex": 269,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "8ab28e4f-31ef-4234-bc9f-c803781eed2e"
+      },
+      {
+        "name": "설문자",
+        "comment": "",
+        "columns": [
+          {
+            "name": "순번",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "8f0ac5eb-d0b2-4ebe-87b6-64c93b389b3e"
+          },
+          {
+            "name": "이름",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "45d45e83-f367-454d-afe1-19677ddb2bee"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 599.1105,
+          "top": 123.6434,
+          "zIndex": 210,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "28d027c4-9485-4ecd-9a4b-c197c00ade09"
+      },
+      {
+        "name": "문항 공통 코드",
+        "comment": "",
+        "columns": [
+          {
+            "name": "문항 공통 코드",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 89.140625,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "e1d5eb9f-4161-4e89-8866-3eacb83d2f12"
+          },
+          {
+            "name": "문항",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "24a9206c-2bc6-4e3e-a5ac-71e5c3713b34"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 112.3559,
+          "top": 398.8471,
+          "zIndex": 255,
+          "widthName": 89.140625,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "08ca35f8-2593-4785-b2b2-934028db7d72"
+      },
+      {
+        "name": "문항",
+        "comment": "",
+        "columns": [
+          {
+            "name": "답항1",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "02f09e57-8ea5-43ac-a3c0-8b805d28a972"
+          },
+          {
+            "name": "답항2",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "08bf2152-e60c-4ed2-a8a9-34a4435fe57b"
+          },
+          {
+            "name": "답항3",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "eb1041a6-ce81-4a71-9ec9-25def182b83b"
+          },
+          {
+            "name": "답항4",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "be31f563-80d3-4ae1-8c50-d9905881f370"
+          },
+          {
+            "name": "문항",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "952919bd-ca2a-4a6c-b282-bb8bb1127f1d"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 113.6206,
+          "top": 81.0676,
+          "zIndex": 257,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "f97c6a27-dae5-4947-9369-58b9d81c0262"
+      },
+      {
+        "name": "결과값",
+        "comment": "",
+        "columns": [
+          {
+            "name": "순번",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "00fcf372-14c8-491c-b8e9-3d52f3287ac6"
+          },
+          {
+            "name": "이름",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "ba036c42-b3cc-492e-84e4-92caa504cd4e"
+          },
+          {
+            "name": "문항1",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "507e1516-f6ab-4b0e-8885-d908360b2b0e"
+          },
+          {
+            "name": "문항2",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "384879e0-e67d-4c78-8dfe-f5e2baea1611"
+          },
+          {
+            "name": "문항3",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "a843e6ba-4c3e-4e39-bbcc-171faf158f04"
+          },
+          {
+            "name": "문항4",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "e37c42b4-b100-46ef-a4d6-a9186b5285ca"
+          },
+          {
+            "name": "문항 공통 코드",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 89.140625,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "10c0c2ba-3e83-46b9-abe3-14378161f4a8"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 596.3559,
+          "top": 526.2232,
+          "zIndex": 259,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "21082ab9-31c4-4590-ae3d-bdddfba27aaa"
+      }
+    ],
+    "indexes": []
+  },
+  "memo": {
+    "memos": []
+  },
+  "relationship": {
+    "relationships": [
+      {
+        "identification": false,
+        "relationshipType": "OneOnly",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "28d027c4-9485-4ecd-9a4b-c197c00ade09",
+          "columnIds": [
+            "8f0ac5eb-d0b2-4ebe-87b6-64c93b389b3e",
+            "45d45e83-f367-454d-afe1-19677ddb2bee"
+          ],
+          "x": 946.1105,
+          "y": 178.64339999999999,
+          "direction": "right"
+        },
+        "end": {
+          "tableId": "8ab28e4f-31ef-4234-bc9f-c803781eed2e",
+          "columnIds": [
+            "d803dc83-35ff-449e-b85f-a3f851345327",
+            "fd504ed7-97fc-4ef8-af40-c41f7b561887"
+          ],
+          "x": 1084.4432,
+          "y": 177.72140000000002,
+          "direction": "left"
+        },
+        "constraintName": "fk_설문자_to_답항",
+        "visible": true,
+        "id": "16864d3d-9008-48e1-80e5-d5946633c83a"
+      },
+      {
+        "identification": false,
+        "relationshipType": "ZeroN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "28d027c4-9485-4ecd-9a4b-c197c00ade09",
+          "columnIds": [
+            "8f0ac5eb-d0b2-4ebe-87b6-64c93b389b3e",
+            "45d45e83-f367-454d-afe1-19677ddb2bee"
+          ],
+          "x": 772.6105,
+          "y": 233.64339999999999,
+          "direction": "bottom"
+        },
+        "end": {
+          "tableId": "21082ab9-31c4-4590-ae3d-bdddfba27aaa",
+          "columnIds": [
+            "00fcf372-14c8-491c-b8e9-3d52f3287ac6",
+            "ba036c42-b3cc-492e-84e4-92caa504cd4e"
+          ],
+          "x": 784.4262125,
+          "y": 526.2232,
+          "direction": "top"
+        },
+        "constraintName": "fk_설문자_to_결과값",
+        "visible": true,
+        "id": "e0a00d2e-1f4b-4a10-9597-da9e608b17ba"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "08ca35f8-2593-4785-b2b2-934028db7d72",
+          "columnIds": [
+            "e1d5eb9f-4161-4e89-8866-3eacb83d2f12"
+          ],
+          "x": 488.496525,
+          "y": 453.8471,
+          "direction": "right"
+        },
+        "end": {
+          "tableId": "21082ab9-31c4-4590-ae3d-bdddfba27aaa",
+          "columnIds": [
+            "10c0c2ba-3e83-46b9-abe3-14378161f4a8"
+          ],
+          "x": 596.3559,
+          "y": 632.4732,
+          "direction": "left"
+        },
+        "constraintName": "fk_문항 공통 코드_to_결과값",
+        "visible": true,
+        "id": "988b2ba7-79c0-4727-8687-3e28645b79bf"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "08ca35f8-2593-4785-b2b2-934028db7d72",
+          "columnIds": [
+            "24a9206c-2bc6-4e3e-a5ac-71e5c3713b34"
+          ],
+          "x": 300.4262125,
+          "y": 398.8471,
+          "direction": "top"
+        },
+        "end": {
+          "tableId": "f97c6a27-dae5-4947-9369-58b9d81c0262",
+          "columnIds": [
+            "952919bd-ca2a-4a6c-b282-bb8bb1127f1d"
+          ],
+          "x": 287.12059999999997,
+          "y": 252.5676,
+          "direction": "bottom"
+        },
+        "constraintName": "fk_문항 공통 코드_to_문항",
+        "visible": true,
+        "id": "ff86f930-c80c-4780-91ef-b16ba58dadb4"
+      },
+      {
+        "identification": false,
+        "relationshipType": "ZeroN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "59234e48-de27-4ce7-a899-bbac4760df3f",
+          "columnIds": [
+            "9dea9d1b-6172-4c76-bc0c-5770a6633759",
+            "3550092f-0f59-45cc-b351-394e7f8a2c66"
+          ],
+          "x": 1269.9370125,
+          "y": 415.1101,
+          "direction": "top"
+        },
+        "end": {
+          "tableId": "8ab28e4f-31ef-4234-bc9f-c803781eed2e",
+          "columnIds": [
+            "dd761057-1448-422c-ad27-376b54b955ec",
+            "0a8c9ee2-8457-4fbb-8fe5-8510b84bc947"
+          ],
+          "x": 1272.5135125,
+          "y": 253.22140000000002,
+          "direction": "bottom"
+        },
+        "constraintName": "fk_답항 공통 코드_to_답항",
+        "visible": true,
+        "id": "1ac59c61-88a1-43bf-8df5-956ddc0144b9"
+      }
+    ]
+  }
+}
